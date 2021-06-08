@@ -41,15 +41,15 @@ function App() {
 
   return (
     <Fragment>
-      {notification && (
-        <Notification
-          status={notification.status}
-          title={notification.title}
-          message={notification.message}
-        />
-      )}
       <Layout>
         {isShown && <Cart />}
+        {notification && (
+          <Notification
+            status={notification.status}
+            title={notification.title}
+            message={notification.message}
+          />
+        )}
         <Products />
       </Layout>
     </Fragment>

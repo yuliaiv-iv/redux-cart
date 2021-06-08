@@ -1,6 +1,7 @@
-.item h3 {
+.card_title {
   margin: 0.5rem 0;
   font-size: 1.25rem;
+  color: #3a3a3a;
 }
 
 .item header {

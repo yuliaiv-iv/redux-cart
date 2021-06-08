@@ -7,7 +7,7 @@ export const getCartData = () => {
       const response = await fetch('https://books-6064e-default-rtdb.firebaseio.com/cart.json');
 
       if (!response.ok) {
-        throw new Error('could not get cart data!');
+        throw new Error('Could not get cart data!');
       }
 
       const data = await response.json();
@@ -22,10 +22,10 @@ export const getCartData = () => {
       }));
     } catch (error) {
       dispatch(
-        uiActions.showNitification({
+        uiActions.showNotification({
           status: 'error',
           title: 'Error!',
-          message: 'Sent cart data failed!',
+          message: 'Something went wrong... Try later',
         }),
       );
     }
@@ -35,7 +35,7 @@ export const getCartData = () => {
 export const sendCartData = (cart) => {
   return async (dispatch) => {
     dispatch(
-      uiActions.showNitification({
+      uiActions.showNotification({
         status: 'pending',
         title: 'Sending...',
         message: 'Sending cart data!',
@@ -48,25 +48,25 @@ export const sendCartData = (cart) => {
         body: JSON.stringify(cart),
       });
       if (!response.ok) {
-        throw new Error('Sending cart data failed');
+        throw new Error('Sending cart data failed!');
       }
     };
 
     try {
       await sendRequest();
       dispatch(
-        uiActions.showNitification({
+        uiActions.showNotification({
           status: 'success',
           title: 'Success!',
-          message: 'Sent cart data successfully!',
+          message: 'Cart data successfully updated!',
         }),
       );
     } catch (error) {
       dispatch(
-        uiActions.showNitification({
+        uiActions.showNotification({
           status: 'error',
           title: 'Error!',
-          message: 'Sent cart data failed!',
+          message: 'Something went wrong... Try later',
         }),
       );
     }

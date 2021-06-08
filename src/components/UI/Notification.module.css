@@ -1,10 +1,12 @@
 .notification {
-  width: 100%;
+  width: 640px;
+  margin: auto;
   height: 3rem;
-  background-color: #1a8ed1;
+  margin-top: 2rem;
+  background-color: #865aff;
   display: flex;
   justify-content: space-between;
-  padding: 0.5rem 10%;
+  padding: 1rem;
   align-items: center;
   color: white;
 }
@@ -20,5 +22,5 @@
 }
 
 .success {
-  background-color: #1ad1b9;
+  background-color: #00bf8a;
 }

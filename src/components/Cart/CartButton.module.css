@@ -1,7 +1,7 @@
 .button {
   background-color: transparent;
-  border-color: #1ad1b9;
-  color: #1ad1b9;
+  border-color: #966fff;
+  color: #966fff;
 }
 
 .button:hover,
@@ -11,10 +11,11 @@
 
 .button span {
   margin: 0 0.5rem;
+  font-weight: bold;
 }
 
 .badge {
-  background-color: #1ad1b9;
+  background-color: #966fff;
   border-radius: 30px;
   padding: 0.15rem 1.25rem;
   color: #1d1d1d;
