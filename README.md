@@ -1,6 +1,6 @@
 # Redux Cart
 
-**[Click here](https://yuliaiv-iv.github.io/redux-cart/)** to view published project
+**[Click here](https://yuliaiv-iv.github.io/redux-cart)** to view published project
 
 ### Description
 
